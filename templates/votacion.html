@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Votación</title>
+</head>
+<body>
+    <h2>¡Bienvenido a la votación!</h2>
+    <form method="post" action="/votacion">
+        <input type="hidden" name="dni" value="{{ dni }}"> <!-- Usar el valor de dni aquí -->
+        <label for="opcion">Elige tu opción:</label><br>
+        <input type="radio" name="opcion" value="opcion1" required>Opción 1<br>
+        <input type="radio" name="opcion" value="opcion2" required>Opción 2<br>
+        <input type="radio" name="opcion" value="opcion3" required>Opción 3<br>
+        <button type="submit">Votar</button>
+    </form>
+</body>
+</html>
